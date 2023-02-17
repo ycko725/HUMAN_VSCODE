@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+    <style>
+        *{margin: 0; padding: 0;box-sizing: border-box;}
+
+        header {
+            background-color: black;
+            height: 80px;
+
+        }
+        nav {}
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 60;
+            padding: 10px 20px;
+            text-align: left;
+        }
+
+        nav a:hover {
+            background-color: cornflowerblue;
+        }
+
+        section {
+            margin: 0 auto;
+            width: 1024px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 200px;
+
+        }
+
+        footer {
+            background-color: lightgray;
+            min-height: 80px;
+        }
+
+        footer .copy {
+            float: left;
+            line-height: 80;
+            padding: 0 20px;
+        }
+        footer .family{
+            float: right;
+            line-height: 80;
+            min-width: 120px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://www.naver.com">네이버</a>
+            <a href="http://www.kakao.com">카카오</a>
+            <a href="http://www.youtube.com">유튜브</a>
+        </nav>
+    </header>
+    <section>
+        <h1>My Page</h1>
+        <p>My Page 에 오신걸 환영합니다~!</p>
+    </section>
+    <section>
+        <h1>2번째 섹션</h1>
+        <p>2번째 영역 입니다~!</p>
+        <article>
+            소리다.이것은 장식하는 곳으로 우리 인생에 방지하는 봄바람이다. 위하여서, 용기가 거친 내려온 천자만홍이 작고 길을 칼이다. 너의 우리 원질이 전인 기쁘며, 불어 보라. 그들은 역사를 우리는 같지 있다. 커다란 속에서 몸이 철환하였는가? 청춘이 가슴이 따뜻한 것은 피고 꽃이 피가 쓸쓸한 칼이다. 가치를 영원히 쓸쓸한 따뜻한 아름답고 것이다. 대한 싹이 끝에 그와 그림자는 얼마나 운다. 수 내려온 불어 말이다. 청춘의 이 우리는 이상 가슴이 보배를 있는가? 인생을 지혜는 용감하고 것이다.
+        </article>
+    </section>
+    <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 영역 입니다~!</p>
+    </section>
+    <footer>
+        <p class="copy">Copyright ⓒ ALOHA CLASS. All Rights Reserved</p>
+        <p class="family"></p>
+            <select name="family">
+                <option value="1">네이버</option>
+                <option value="2">카카오</option>
+                <option value="3">유튜브</option>
+            </select>
+    </footer>
+</body>
+</html>
