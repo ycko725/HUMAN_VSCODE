@@ -1,0 +1,32 @@
+* {margin: 0; padding: 0;}
+#wrap {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* circle */
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 32%, rgba(0,0,0,1) 68%, rgba(255,255,255,1) 100%);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 32%, rgba(0,0,0,1) 68%, rgba(255,255,255,1) 100%);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 32%, rgba(0,0,0,1) 68%, rgba(255,255,255,1) 100%);
+    animation-name: ball;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+#wrap h1 {line-height: 200px; color: white; text-align: center;}
+
+/* 애니메이션의 변경지점을 지정하는 속성 */
+@keyframes ball {
+    /* 시작 지점 - from or 0% */
+    /* 종료 지점 - to or 100% */
+    0% {
+        left: 100px;
+    }
+    50% {
+        left: 900px;
+        transform: rotate(3600deg);
+    }
+    100% {
+        left: 100px;
+        transform: rotate(0deg);
+    }
+}
